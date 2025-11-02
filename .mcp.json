@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "mcp-weather-server/index.js"
+      ]
+    },
+    "memo": {
+      "command": "node",
+      "args": [
+        "mcp-memo-server/index.js"
+      ]
+    }
+  }
+}

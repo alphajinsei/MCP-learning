@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "mcp-weather-server/index.js"
+      ]
+    }
+  }
+}

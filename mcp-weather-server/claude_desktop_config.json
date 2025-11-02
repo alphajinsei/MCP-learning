@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "c:\\Users\\peinn\\OneDrive\\sandbox\\claude_code\\mcp-weather-server\\index.js"
+      ]
+    }
+  }
+}
