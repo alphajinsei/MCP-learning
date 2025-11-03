@@ -30,14 +30,17 @@ MCP/
 
 ### 1. 天気情報サーバー
 
-**学習レベル**: 初級
+**学習レベル**: 初級〜中級
 
-外部API（Open-Meteo）を使用して日本の主要都市の天気情報を取得するシンプルなMCPサーバーです。
+外部API（Open-Meteo）を使用して日本の主要都市の天気情報を取得するMCPサーバーです。
+**MCPの3つの主要機能（Tools、Resources、Prompts）をすべて実装した完全な学習用サンプル**です。
 
-- 提供ツール: 1個（`get_weather`）
+- **Tools**: 1個（`get_weather`）
+- **Resources**: 1個（`weather://cities` - 都市一覧）
+- **Prompts**: 1個（`compare-weather` - 天気比較）
 - 外部API連携: あり
 - データ永続化: なし
-- 複雑さ: シンプル
+- 複雑さ: 中程度
 
 詳細は [mcp-weather-server/README.md](mcp-weather-server/README.md) を参照してください。
 
@@ -123,9 +126,15 @@ Claude: [メモ一覧を表示]
 
 ### 基本概念
 - MCPサーバーの初期化と設定
-- ツール（Tools）の定義と実装
+- 機能の宣言（Capabilities）
 - リクエストハンドラーの実装
 - 標準入出力による通信
+- JSON-RPC 2.0プロトコル
+
+### MCPの3つの主要機能
+- **Tools**: 実行可能な機能の提供
+- **Resources**: 静的・動的データの提供
+- **Prompts**: 定型質問テンプレートの提供
 
 ### 実践的なトピック
 - 外部APIとの連携
@@ -133,6 +142,8 @@ Claude: [メモ一覧を表示]
 - エラーハンドリング
 - 複数ツールの管理
 - CRUD操作の実装
+- カスタムURIスキームの設計
+- 動的プロンプト生成
 
 ## 技術スタック
 
