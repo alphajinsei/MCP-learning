@@ -6,5 +6,9 @@
     "deny": [],
     "ask": []
   },
-  "enableAllProjectMcpServers": true
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "weather",
+    "memo"
+  ]
 }
